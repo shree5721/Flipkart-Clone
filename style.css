@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #2874f0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e1e4e7;
+}
+.container{
+    padding: 0 14px;
+}
+header{
+    height: 56px;
+    background-color: var(--primary-color);
+}
+header .nav-container{
+    display: flex;
+    height: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Brand logo */
+header .nav-container .nav-logo{
+    min-width: 8.563rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+header .nav-container .nav-logo img{
+    width: 4.7rem;
+}
+/* Search component */
+header .nav-search{
+    margin-left: 1.25rem;
+}
+header .nav-search .search-container{
+    width: 37.5rem;
+    height: 2.25rem;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+}
+header .nav-search .search-container .search-input{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: .85rem;
+}
+header .nav-search .search-container .search-button{
+    width: 2rem;
+    background-color: rgb(236, 222, 197);
+    height: 100%;
+    border: none;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: 0 8px;
+    font-size: 16px;
+}
+/* Login button component */
+header .login{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+header .login button{
+    width: 7rem;
+    padding: 5px 40px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius:0;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+/* Component 4 */
+header .seller p{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 1.25rem;
+}
+/* Component 5 */
+header .more-drop{
+    display: flex;
+    align-items:center ;
+    justify-content: center; 
+    margin-right: 20px;
+}
+header .more-drop .more-text{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+/* Component 6 */
+header .nav-cart{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header .nav-cart i{
+    font-size: 1.4rem;
+    margin-right: .2rem;
+}
+header .nav-cart .cart-text{
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-self: flex-end;
+}
+/* Hover effect */
+.hover:hover{
+    transform: scale(1.03);
+}
+/* Styling section 1 */
+.section-1{
+    width: 1508px;
+    margin:0 auto;
+    height: 126px;
+    background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgb(0 0 0 / 16%);
+    margin-top: 12px;
+}
+.section-1 .section-1-container{
+    width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap: 4px;
+    cursor: pointer;
+}
+span{
+    /* display: block; */
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img{
+    width: 64px;
+    height: 64px;
+}
+.section-1-item img:hover{
+    transform: scale(1.04);
+}
+/* Styling banner image */
+.section-2-container{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50
+    );
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 280px;
+    cursor: pointer;
+    margin-top:1rem ;
+}
+/* Styling banner image 2 */
+.section-3-container{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* styling section 4 */
+.section-4-container{
+    display: flex;
+    height: 370px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: .5rem;
+}
+.section-4-offers{
+    width: 230px;
+    height: 100%;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-4-offers-viewall{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 120px;
+    font-weight: 500;
+}
+.section-4-offers-viewall button {
+    margin-top: 18px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.section-4-list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+.section-4-item{
+    width: 232px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.section-4-item img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.section-4-item img:hover{
+    transform: scale(1.03);
+}
+.section-4-item-header{
+    font-weight: 600;
+    padding: 4px 0;
+}
+.section-4-item-price{
+    font-size: 1.15rem;
+    color: coral;
+}
+.section-4-item-explore{
+    font-size: .850rem;
+    padding: 4px 0;
+}
+/* Styling footer */
+.footer-1{
+    height:280px;
+    background-color: #14181c;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.footer-1 .list-item a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 4px; 
+}
+.footer-1 .list-item p{
+font-size: 1rem;
+color:rgb(109, 102, 89);
+padding-bottom: 8px;
+}
+.footer-1 .list-item{
+    margin-top: 40px;
+}
+.footer-1 .list-item a:hover{
+    text-decoration: underline;
+}
+
